@@ -22,6 +22,11 @@ const matches = [
     { id: 2, homeTeamId: 2, awayTeamId: 1, date: '2024-04-06', result: 'Warriors 110 - Lakers 105' }
 ];
 
+// Endpoint for NBA data
+app.get('/NBA', (req, res) => {
+    res.send('Welcome to the NBA endpoint');
+});
+
 // Endpoint to filter players by team name
 app.get('/players/team/:teamName', (req, res) => {
     const teamName = req.params.teamName;
