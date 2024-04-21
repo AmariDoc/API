@@ -2,8 +2,8 @@ const pool = require('../../db');
 const queries = require('./queries');
 
 //Get ALL Data
-const getInventory = (req, res) => {
-    pool.query(queries.getInventory,(error, results)=> {
+const getNBA = (req, res) => {
+    pool.query(queries.getNBA,(error, results)=> {
         if(error)throw error;
         res.status(200).json(results.row);
     });
@@ -14,5 +14,5 @@ const getInventory = (req, res) => {
 //Modify Data by Param
 
 module.exports = {
-    getInventory,
+    getNBA,
 };
