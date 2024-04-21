@@ -1,8 +1,6 @@
 const express = require('express');
-const nbaRoutes = require('./src/nba/routes');
-
 const app = express();
-const port = 8002;
+const nbaRoutes = require('./src/nba/routes');
 
 app.use(express.json());
 
@@ -10,6 +8,10 @@ const cors = require('cors');
 app.use(cors({
     origin: '*'
 }));
+
+const port = 8500;
+
+
 
 app.get('/', (req, res) => {
     res.send('Hello Amari');
