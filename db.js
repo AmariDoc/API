@@ -8,7 +8,7 @@ const pool = new Pool({
     password: "MZrVZm8Nvl9GeO6S1c2cYRHEBLNmbcPR",
     //host: "LocalHost",
     //password:"1234",
-    database: "NBA",
+    //database: "NBA",
     port: 5432,
 });
 
